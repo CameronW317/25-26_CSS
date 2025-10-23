@@ -3,6 +3,7 @@
     margin: 0;
 
 }
+
 .container{
     display: grid;
     grid-template-areas:'header navbar navbar navbar navbar navbar'
@@ -52,12 +53,17 @@
     text-align: center;
     grid-area: para;
 }
+.para p{
+    font-size: 1.8em;
+}
 .subheading{
     grid-area: subhead;
+    padding: 14px 16px;
 }
 .imgLinks1{
     grid-area: imglink1;
     padding: 10px;
+
 }
 .imgLinks2{
     grid-area: imglink2;

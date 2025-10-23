@@ -3,6 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas:
+                    'header navbar navbar navbar navbar navbar'
+                    'para para para para para para'
+                    'form form form form form form'
+                    'footer footer footer footer footer footer'
+        }
+        #form{
+            grid-area: form;
+            padding: 30px;
+            text-align: center;
+
+
+        }
+        #form form{
+            font-size: 3em;
+        }
+        #form input{
+            font-size: 1em;
+        }
+    </style>
 </head>
 <body>
 <div class="container">
@@ -11,16 +35,13 @@
     </div>
     <div class="navbar">
         <ul>
-            <li><a href="contact_page.html" target="blank">Contact</a></li>
+            <li><a href="contact.html" target="blank">Contact</a></li>
 
-            <li><a href="abt_us.html" target="blank">About Us</a></li>
+            <li><a href="about.html" target="blank">About Us</a></li>
 
             <li id="search">Search</li>
         </ul>
 
-    </div>
-    <div class="heading">
-        <h1>A Guide to Ski Resorts</h1>
     </div>
     <div class="para">
         <p>We listed the most popular, highest rated,
@@ -28,9 +49,41 @@
             from the East to West, we compiled our picks for
             your next big trip!</p>
     </div>
+    <div id="form">
+        <form action="links.html" method="GET">
+            <label for="name">Data</label>
+            <input type="text" name="name" id="name" placeholder="John Smith"><br />
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="yourEmail@domain.ext"><br />
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                   placeholder="123-45-678"><br />
+            <label for="emailConsent">May we send you promotional nonsense</label>
+            <input type="checkbox" name="emailConsent" id="emailConsent" checked> <br />
+            <select name="department" id="department">
+
+                <option value="tech">Tech Support</option>
+                <option value="billing">Billing</option>
+                <option value="sales">Sales</option>
+                <option value="custom">Custom Order</option>
+
+            </select>
+            <label for="department">Select Department</label>  <br />
+
+            <!-- Text Area -->
+            <label for="question">Describe your  inquiry:</label><br />
+            <textarea name="question" id="question" cols="50" rows="10">Please write your question here we will get to you ASAP.
+</textarea>
+
+
+            <input type="submit">
+        </form>
+    </div>
     <div class="footer">
         <h2>Ski Guide</h2>
     </div>
+
 </div>
 </body>
 </html>

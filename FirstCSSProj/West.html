@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>West</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 'header navbar navbar navbar navbar navbar'
+            'para para para para para para'
+            'subhead subhead subhead subhead subhead subhead'
+            'list list list list list list'
+            'list list list list list list'
+            'footer footer footer footer footer footer'
+        }
+        .list{
+            grid-area: list;
+        }
+        .list th{
+            font-size: 2em;
+        }
+        .list td{
+            font-size: 1.5em;
+        }
+        .subheading{
+            font-size: 1.5em;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <a href="index.html"><h2>Ski Guide</h2></a>
+    </div>
+    <div class="navbar">
+        <ul>
+            <li><a href="contact.html" target="blank">Contact</a></li>
+
+            <li><a href="about.html" target="blank">About Us</a></li>
+
+            <li id="search">Search</li>
+        </ul>
+
+    </div>
+
+
+    <div class="para">
+        <br />
+        <br />
+        <br />
+        <p>We listed the most popular, highest rated,
+            and cheapest ski resorts all across North America. Ranging
+            from the East to West, we compiled our picks for
+            your next big trip!</p>
+        <br />
+    </div>
+    <div class="subheading">
+        <h2>West</h2>
+    </div>
+    <div class="list">
+        <table>
+            <tr>
+                <th width="20%">Colorado</th>
+                <th width="20%">Utah</th>
+                <th width="20%">California</th>
+                <th width="20%">Montana</th>
+                <th width="20%">Wyoming</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>Aspen Snowmass</li>
+                        <li>Telluride</li>
+                        <li>Steamboat</li>
+                        <li>Copper Mountain</li>
+                        <li>Breckenridge</li>
+                        <li>Crested Butte</li>
+                        <li>Vail</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Solitude</li>
+                        <li>Brighton</li>
+                        <li>Snowbird</li>
+                        <li>Park City</li>
+                        <li>Snow Basin</li>
+                        <li>Alta</li>
+                        <li>Deer Valley</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Mammoth Mountain</li>
+                        <li>Palisades Tahoe</li>
+                        <li>Heavenly</li>
+                        <li>Kirkwood</li>
+                        <li>Sierra-at-Tahoe</li>
+                        <li>Northstar</li>
+                        <li>Bear Valley</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Big Sky</li>
+                        <li>Whitefish Mountain</li>
+                        <li>Bridger Bowl</li>
+                        <li>Discovery</li>
+                        <li>Great Divide</li>
+                    </ul>
+
+                </td>
+                <td>
+                    <ul>
+                        <li>Jackson Hole</li>
+                        <li>Grand Targhee</li>
+                        <li>Snowy Range</li>
+                        <li>Meadowlark</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="footer">
+        <h2>Ski Guide</h2>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canada</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 'header navbar navbar navbar navbar navbar'
+            'para para para para para para'
+            'subhead subhead subhead subhead subhead subhead'
+            'list list list list list list'
+            'list list list list list list'
+            'footer footer footer footer footer footer'
+        }
+        .list{
+            grid-area: list;
+        }
+        .list th{
+            font-size: 2em;
+        }
+        .list td{
+            font-size: 1.5em;
+        }
+        .subheading{
+            font-size: 1.5em;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <a href="index.html"><h2>Ski Guide</h2></a>
+    </div>
+    <div class="navbar">
+        <ul>
+            <li><a href="contact.html" target="blank">Contact</a></li>
+
+            <li><a href="about.html" target="blank">About Us</a></li>
+
+            <li id="search">Search</li>
+        </ul>
+
+    </div>
+
+
+    <div class="para">
+        <br />
+        <br />
+        <br />
+        <p>We listed the most popular, highest rated,
+            and cheapest ski resorts all across North America. Ranging
+            from the East to West, we compiled our picks for
+            your next big trip!</p>
+        <br />
+    </div>
+    <div class="subheading">
+        <h2>Canada</h2>
+    </div>
+    <div class="list">
+        <table>
+            <tr>
+                <th width="25%">British Columbia</th>
+                <th width="25%">Quebec</th>
+                <th width="25%">Alberta</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>Whistler Blackcomb</li>
+                        <li>Big White</li>
+                        <li>Revelstoke</li>
+                        <li>Kicking Horse</li>
+                        <li>Sun Peak</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Mount Tromblant</li>
+                        <li>Mount Saint Anne</li>
+                        <li>Le Massif de Charlevoix</li>
+                        <li>Bromont, montagne d’expériences</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Lake Louise</li>
+                        <li>Banff Sunshine</li>
+                        <li>Mount Norquay</li>
+                        <li>Marmot Basin</li>
+                        <li>Castle Mountain</li>
+                    </ul>
+                </td>
+
+            </tr>
+        </table>
+    </div>
+    <div class="footer">
+        <h2>Ski Guide</h2>
+    </div>
+</div>
+</body>
+</html>
