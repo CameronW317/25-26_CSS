@@ -21,11 +21,12 @@
 
         }
         #form form{
-            font-size: 3em;
+            font-size: 2.2em;
         }
         #form input{
-            font-size: 1em;
+            font-size: .5em;
         }
+
     </style>
 </head>
 <body>
@@ -51,7 +52,7 @@
     </div>
     <div id="form">
         <form action="links.html" method="GET">
-            <label for="name">Data</label>
+            <label for="name">Name</label>
             <input type="text" name="name" id="name" placeholder="John Smith"><br />
             <label for="email">Email</label>
             <input type="email" name="email" id="email" placeholder="yourEmail@domain.ext"><br />
@@ -61,15 +62,15 @@
                    placeholder="123-45-678"><br />
             <label for="emailConsent">May we send you promotional nonsense</label>
             <input type="checkbox" name="emailConsent" id="emailConsent" checked> <br />
+            <label for="department">Select Department</label>
             <select name="department" id="department">
 
                 <option value="tech">Tech Support</option>
-                <option value="billing">Billing</option>
-                <option value="sales">Sales</option>
                 <option value="custom">Custom Order</option>
 
             </select>
-            <label for="department">Select Department</label>  <br />
+            <br />
+
 
             <!-- Text Area -->
             <label for="question">Describe your  inquiry:</label><br />

@@ -16,13 +16,16 @@
     margin: auto;
     background-color: whitesmoke;
 }
+.container div{
+    padding: 10px;
+}
 .header{
     grid-area: header;
     background-color: cornflowerblue;
 }
 .header a{
     color:white;
-
+    text-decoration: none;
     width:100%;
     height:150px;
     text-align:center;
@@ -50,6 +53,7 @@
 }
 .para{
     padding: 14px 16px;
+    border: 2px solid white;
     text-align: center;
     grid-area: para;
 }
@@ -59,22 +63,32 @@
 .subheading{
     grid-area: subhead;
     padding: 14px 16px;
+    background-color: aliceblue;
+}
+.img{
+    padding: 10px;
+    text-align: center;
+    background-color: aliceblue;
+}
+.img:hover{
+    box-shadow: 2px 2px 5px #000;
 }
 .imgLinks1{
     grid-area: imglink1;
-    padding: 10px;
+
 
 }
 .imgLinks2{
     grid-area: imglink2;
-    padding: 10px;
+
 }
 .imgLinks3{
      grid-area: imglink3;
-     padding: 10px;
  }
 
-
+.caption{
+    background-color: aliceblue;
+}
 .caption1{
     grid-area: caption1;
     color: black;
@@ -100,4 +114,25 @@
     background-color: lightblue;
     text-align: center;
     grid-area: footer;
+}
+.list{
+    grid-area: list;
+    background-color: aliceblue;
+}
+.list th{
+    font-size: 2em;
+}
+.list td{
+    font-size: 1.5em;
+}
+.subheading{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 15px;
+}
+.list li:nth-child(odd){
+    background-color: lightblue;
+}
+#form{
+    background-color: aliceblue;
 }
